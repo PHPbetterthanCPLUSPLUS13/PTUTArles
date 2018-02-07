@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/i"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="?attr/listPreferredItemPaddingLeft"
+            android:contentDescription="Retour"
+            android:onClick="bientot"
+            android:src="@drawable/ic_back"/>
+
+        <ImageButton
+            android:id="@+id/btn_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="?attr/listPreferredItemPaddingLeft"
+            android:contentDescription="@string/acc_nom"
+            android:layout_weight="2"
+            android:onClick="ret"
+            android:src="@drawable/ic_home"/>
+
+        <ImageButton
+            android:id="@+id/btn_valid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="?attr/listPreferredItemPaddingLeft"
+            android:contentDescription="valider"
+            android:onClick="accept"
+            android:src="@drawable/ic_check"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/i"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:padding="?attr/listPreferredItemPaddingLeft"
+                android:contentDescription="@string/acc_nom"
+                android:layout_weight="2"
+                android:layout_margin="20dp"
+                android:src="@drawable/ic_home"/>
+            
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:padding="?attr/listPreferredItemPaddingLeft"
+                android:contentDescription="@string/acc_nom"
+                android:layout_weight="2"
+                android:layout_margin="20dp"
+                android:src="@drawable/ic_home"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:padding="?attr/listPreferredItemPaddingLeft"
+                android:contentDescription="@string/acc_nom"
+                android:layout_weight="2"
+                android:layout_margin="20dp"
+                android:src="@drawable/ic_home"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:padding="?attr/listPreferredItemPaddingLeft"
+                android:contentDescription="@string/acc_nom"
+                android:layout_weight="2"
+                android:layout_margin="20dp"
+                android:src="@drawable/ic_home"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:padding="?attr/listPreferredItemPaddingLeft"
+                android:contentDescription="@string/acc_nom"
+                android:layout_weight="2"
+                android:layout_margin="20dp"
+                android:src="@drawable/ic_home"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

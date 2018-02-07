@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/Rl">
+
+    <LinearLayout
+        android:id="@+id/Lin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:orientation="horizontal" >
+
+        <!--<ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="?attr/listPreferredItemPaddingLeft"
+            android:contentDescription="Retour"
+            android:src="@drawable/ic_back" />-->
+
+        <TextView
+            android:id="@+id/text_acc"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/acc_nom"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:textSize="34dp"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="?attr/listPreferredItemPaddingLeft"
+            android:contentDescription="Option"
+            android:src="@drawable/ic_options" />
+
+    </LinearLayout>
+
+    <!--<TextView
+        android:id="@+id/t"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Ok"
+        android:gravity="center"
+        android:layout_below="@id/Lin" />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/Lin"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:padding="150dp"
+                android:contentDescription="@string/cont"
+                android:src="@drawable/ic_contacts" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:padding="150dp"
+                android:contentDescription="@string/voc"
+                android:src="@drawable/ic_voice"
+                android:onClick="yop"/>
+
+        </LinearLayout>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="?attr/listPreferredItemPaddingLeft"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="Attention"
+        android:src="@drawable/ic_warning"
+        android:id="@+id/imageButton"
+        android:onClick="hum" />
+
+    <!--<ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:src="@drawable/ic_options"
+        android:layout_below="@id/Lin"/>-->
+
+</RelativeLayout>
